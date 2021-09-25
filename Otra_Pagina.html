@@ -4,14 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="imgs/Minecraft.jpg" type="image/x-icon">
+    <title>formularios</title>
 </head>
 <body>
    <p>Buenas buenass, soy la otra pagina papuuu</p> 
    <p>Click en la imagen pa volver</p>
    <a href="index.html">
        <img src="https://geekzilla.tech/home/wp-content/uploads/2020/11/unnamed.png" 
-       alt="A ratos sirve" width="100" height="100">
+       alt="A ratos sirve" width="80" height="80">
    </a>
+   <header>
+       <h1>FORMULARIO</h1>
+   </header>
+   <section>
+    <form action="">
+        
+        <fieldset>
+            <legend>Parte 1</legend>
+            <!--Texto-->
+            <label for="nombre">Nombre
+                <input type="text" name="" id="nombre" maxlength="20" placeholder="Escribe nombre" value="Diego" readonly>
+            </label> <br><br>
+            <label for="cc">Documento
+                <input type="text" name="" id="cc" maxlength="10" placeholder="Escribe documento" value="3212112" readonly>
+            </label> <br> <br>
+            
+            <!--Rango-->
+            <label for="edad">Edad
+                <input type="range" name="" id="edad" min="18" max="65" value="18" step="5">
+            </label>
+            <br><br>
+            
+            <!--Numero-->
+            <label for="tiempo">Tiempo en la empresa
+                <input type="number" name="" id="tiempo" step="2" min="1" max="30" value="1">
+            </label> <br><br>
+            
+            <!--Contraseña-->
+            <label for="pass">Contraseña
+                <input type="password" name="" id="pass" maxlength="15">
+            </label><br><br>
+            
+            <!--Fecha-->
+            <label for="fecha">Ingresa una fecha
+                <input type="date" name="" id="fecha" min="2019-01-01" max="2021-09-12" value="2018-06-21">
+            </label><br><br>
+            
+            <!--Color-->
+            <label for="color">Color
+                <input type="color" name="" id="color" value="#D92020">
+            </label><br><br>
+            
+            <!--Archivo-->
+            <label for="archivo">Busque un archivo
+                <input type="file" name="" id="archivo" multiple>
+            </label><br><br>
+
+            <!--Correo-->
+            <label for="correo">Ingrese un correo
+                <input type="email" name="" id="correo" >
+            </label>
+        </fieldset>
+        <input type="button" value="Enviar">
+
+        <input type="reset" value="Resetear">
+        <br><br><br>
+        <fieldset>
+            <legend>Parte 2</legend>
+            <select name="" id="">             <!--El value sirve para crear la variable para identificar la opcion elegida-->
+                <option value="1">Medellin</option>
+                <option value="2">Bucaramanga</option>
+                <option value="3">Barranquilla</option>
+                <option value="4">Bógotas</option>
+            </select>
+        </fieldset>
+        <h1>ESTADO CIVIL</h1>
+        <label for="casado">
+            <input type="radio" name="estado_civil" id="casado">
+            Casad@
+        </label><br>
+        <label for="soltero">
+            <input type="radio" name="estado_civil" id="soltero" checked>
+            Solter@
+        </label><br>
+        <label for="viudo">
+            <input type="radio" name="estado_civil" id="viudo">
+            Viud@
+        </label><br>
+        <label for="Divorciado">
+            <input type="radio" name="estado_civil" id="Divorciado">
+            Divorciad@
+        </label><br><br>
+
+        <h1>CHECKBOX ARTE</h1>
+        <label for="Bailar">
+            <input type="checkbox" name="arte" id="Bailar" value="1">
+            Bailar
+        </label><br>
+        <label for="Cantar">
+            <input type="checkbox" name="arte" id="Cantar" value="2">
+            Cantar
+        </label><br>
+        <label for="Pintar">
+            <input type="checkbox" name="arte" id="Pintar" value="3">
+            Pintar
+        </label><br>
+        <label for="Programar">
+            <input type="checkbox" name="arte" id="Programar" value="4" checked>
+            Programar
+        </label>
+    </form>
+   </section>
+
+
+
+
+
 </body>
 </html>
